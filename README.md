@@ -1,7 +1,6 @@
 This example shows how to create and register a custom kryo registrator for Apache Spark
 
-Joda DateTime serialization using Kryo fails if there's no registered classes throwing NullPointerException when
-accessing some fields. Like this trace:
+Joda DateTime deserialized objects serialized using Kryo fail throwing NullPointerException when accessing some fields. Like this trace:
 
 ```scala
  java.lang.NullPointerException
